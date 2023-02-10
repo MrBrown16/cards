@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:host([blue]){
+    color: blue;
+}
+:host([green]){
+    color: green;
+}
+.card{
+    display: flex;
+    border: 1px solid black;
+    border-radius: 30px;
+    background-color: lightblue;
+    min-width: 300px;
+    max-width: 300px;
+    min-height: 476px;
+    max-height: 476px;
+    flex-direction: column;
+    box-shadow: 10px 10px 10px 5px;
+    margin: 0;
+}
+.red{
+    color: red;
+}
+.card>.sign{
+    font-size: 10rem;
+    align-self: center;
+}
+.card .value{
+    font-size: 3rem;
+    padding: 30px;
+    line-height: 0.8;
+    text-align: center;
+    align-self: flex-start;
+}
+.card .value .sign{
+    font-size: 4rem;
+}
+.card .value:last-child{
+    align-self: flex-end;
+    transform: rotateX(180deg);
+}
